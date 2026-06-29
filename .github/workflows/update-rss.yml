@@ -67,14 +67,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: "npm"
-          # cache-dependency-path é package.json (padrão)
 
       # -----------------------------------------------------------------------
-      # 3. Instalar dependências (zero, mas valida package.json)
+      # 3. Validar package.json
       # -----------------------------------------------------------------------
       - name: Validate package.json
-        run: node -e "const p = JSON.parse(require('fs').readFileSync('package.json','utf8')); console.log('Projeto:', p.name, 'v' + p.version)"
+        run: node -e "import('fs').then(m=>{const p=JSON.parse(m.readFileSync('package.json','utf8'));console.log('Projeto:',p.name,'v'+p.version)})"
 
       # -----------------------------------------------------------------------
       # 4. Gerar RSS
