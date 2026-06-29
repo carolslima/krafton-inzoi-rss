@@ -1,0 +1,15 @@
+{
+  "name": "krafton-inzoi-rss",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Feed RSS automático das notícias da KRAFTON InZOI — consome a API oficial, detecta novidades e publica RSS 2.0 via GitHub Pages.",
+  "scripts": {
+    "generate": "node scripts/generate-rss.js",
+    "start": "node scripts/generate-rss.js"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "MIT"
+}

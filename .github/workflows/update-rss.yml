@@ -1,0 +1,116 @@
+# =============================================================================
+# KRAFTON RSS — Update Feed Workflow
+# =============================================================================
+# Executa periodicamente (a cada 30 minutos) e sob demanda.
+# Consulta a API da KRAFTON, detecta novas notícias e publica o RSS.
+# =============================================================================
+
+name: Update RSS Feed
+
+# ---------------------------------------------------------------------------
+# Gatilhos
+# ---------------------------------------------------------------------------
+on:
+  # Execução automática — a cada 30 minutos
+  schedule:
+    - cron: "*/30 * * * *"
+
+  # Execução manual via botão na interface do GitHub
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Forçar regeneração mesmo sem mudanças"
+        type: boolean
+        default: false
+        required: false
+
+  # Opcional: executa em push no main (útil para testes)
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/generate-rss.js"
+      - ".github/workflows/update-rss.yml"
+
+# ---------------------------------------------------------------------------
+# Permissões
+# ---------------------------------------------------------------------------
+permissions:
+  contents: write # Necessário para push do RSS gerado
+
+# ---------------------------------------------------------------------------
+# Jobs
+# ---------------------------------------------------------------------------
+jobs:
+  update-feed:
+    name: Update RSS Feed
+    runs-on: ubuntu-latest
+    # Timeout total do job — evita workflows zumbis
+    timeout-minutes: 5
+
+    steps:
+      # -----------------------------------------------------------------------
+      # 1. Checkout do repositório
+      # -----------------------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Busca o histórico completo para commits limpos
+          fetch-depth: 1
+          # Token padrão tem permissão de escrita
+          persist-credentials: true
+
+      # -----------------------------------------------------------------------
+      # 2. Setup Node.js 22
+      # -----------------------------------------------------------------------
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          # cache-dependency-path é package.json (padrão)
+
+      # -----------------------------------------------------------------------
+      # 3. Instalar dependências (zero, mas valida package.json)
+      # -----------------------------------------------------------------------
+      - name: Validate package.json
+        run: node -e "const p = JSON.parse(require('fs').readFileSync('package.json','utf8')); console.log('Projeto:', p.name, 'v' + p.version)"
+
+      # -----------------------------------------------------------------------
+      # 4. Gerar RSS
+      # -----------------------------------------------------------------------
+      - name: Generate RSS Feed
+        id: generate
+        run: node scripts/generate-rss.js
+
+      # -----------------------------------------------------------------------
+      # 5. Verificar alterações
+      # -----------------------------------------------------------------------
+      - name: Check for changes
+        id: changes
+        run: |
+          if [ -n "$(git status --porcelain public/rss.xml data/posts.json)" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "Mudanças detectadas — será feito commit"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Nenhuma mudança detectada"
+          fi
+
+      # -----------------------------------------------------------------------
+      # 6. Commit e push (apenas se houver alterações)
+      # -----------------------------------------------------------------------
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add public/rss.xml data/posts.json
+
+          # Obtém contagem de novos posts do log para mensagem
+          COMMIT_MSG="chore: atualizar feed RSS [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+          git commit -m "$COMMIT_MSG"
+
+          git push
+          echo "✅ RSS publicado com sucesso!"
