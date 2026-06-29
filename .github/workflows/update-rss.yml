@@ -1,11 +1,8 @@
 # =============================================================================
-# KRAFTON RSS — Update Feed + Deploy to GitHub Pages
+# KRAFTON RSS — Update Feed + Deploy
 # =============================================================================
-# Um único workflow que:
-#   1. Consulta a API da KRAFTON
-#   2. Detecta novas notícias e gera RSS 2.0
-#   3. Commita as mudanças
-#   4. Publica no GitHub Pages
+# Gera o RSS a partir da API, commita no main e publica na branch gh-pages.
+# A branch gh-pages é servida pelo GitHub Pages (método tradicional).
 # =============================================================================
 
 name: Update RSS Feed
@@ -23,13 +20,9 @@ on:
       - "scripts/generate-rss.js"
       - ".github/workflows/update-rss.yml"
 
-# Permissões para commit + GitHub Pages
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
-# Um job por vez
 concurrency:
   group: "rss-update"
   cancel-in-progress: true
@@ -39,11 +32,6 @@ jobs:
     name: Generate RSS & Deploy
     runs-on: ubuntu-latest
     timeout-minutes: 5
-
-    # URL pública do ambiente (aparece no deploy)
-    environment:
-      name: github-pages
-      url: https://carolslima.github.io/krafton-inzoi-rss/rss.xml
 
     steps:
       # -------------------------------------------------------------------
@@ -67,14 +55,12 @@ jobs:
       # 3. Gerar RSS
       # -------------------------------------------------------------------
       - name: Generate RSS Feed
-        id: generate
         run: node scripts/generate-rss.js
 
       # -------------------------------------------------------------------
-      # 4. Verificar alterações e commitar
+      # 4. Commitar RSS + histórico no main (se houve mudanças)
       # -------------------------------------------------------------------
-      - name: Commit changes (if any)
-        id: commit
+      - name: Commit to main
         run: |
           if [ -n "$(git status --porcelain public/rss.xml data/posts.json)" ]; then
             git config user.name "github-actions[bot]"
@@ -82,30 +68,36 @@ jobs:
             git add public/rss.xml data/posts.json
             git commit -m "chore: atualizar feed RSS [$(date -u +'%Y-%m-%d %H:%M UTC')]"
             git push
-            echo "committed=true" >> "$GITHUB_OUTPUT"
-            echo "✅ Mudanças commitadas"
+            echo "✅ Commit no main"
           else
-            echo "committed=false" >> "$GITHUB_OUTPUT"
             echo "Nenhuma mudança — pulando commit"
           fi
 
       # -------------------------------------------------------------------
-      # 5. Setup GitHub Pages
+      # 5. Publicar na branch gh-pages (apenas rss.xml)
       # -------------------------------------------------------------------
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
+      - name: Deploy to gh-pages
+        run: |
+          # Cria um diretório temporário com o conteúdo a publicar
+          cp public/rss.xml /tmp/rss.xml
 
-      # -------------------------------------------------------------------
-      # 6. Upload do artifact (conteúdo de public/ → raiz do site)
-      # -------------------------------------------------------------------
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: "public"
+          # Configura git
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      # -------------------------------------------------------------------
-      # 7. Deploy para GitHub Pages
-      # -------------------------------------------------------------------
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          # Troca para branch gh-pages (órfã — sem histórico)
+          git checkout --orphan gh-pages 2>/dev/null || git checkout gh-pages
+
+          # Remove tudo exceto o .git
+          git rm -rf --quiet . 2>/dev/null || true
+
+          # Coloca o rss.xml na raiz
+          cp /tmp/rss.xml rss.xml
+
+          # Commit e push forçado na gh-pages
+          git add rss.xml
+          git commit -m "deploy: rss.xml [$(date -u +'%Y-%m-%d %H:%M UTC')]" || echo "Nenhuma alteração no deploy"
+          git push --force origin gh-pages
+
+          # Volta para main
+          git checkout main
