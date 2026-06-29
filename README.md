@@ -255,16 +255,20 @@ O `update-rss.yml` commita o RSS → o push aciona automaticamente o
 O feed estará disponível em:
 
 ```
-https://carolslima.github.io/krafton-inzoi-rss/public/rss.xml
+https://carolslima.github.io/krafton-inzoi-rss/rss.xml
 ```
 
-### ⚠️ Importante
+> ⚠️ **Importante:** O workflow `deploy-pages.yml` faz upload da pasta `public/`.
+> O GitHub Pages publica o conteúdo na **raiz** do site, então o arquivo fica em
+> `/rss.xml`, e não `/public/rss.xml`.
 
-Atualize a constante `FEED_META.feedUrl` no script `generate-rss.js` com a URL
-correta do seu GitHub Pages:
+### ⚠️ Atualize a URL do feed
+
+A constante `FEED_META.feedUrl` já está configurada. Se mudar o nome do
+repositório, atualize:
 
 ```js
-feedUrl: "https://seuusuario.github.io/seurepositorio/public/rss.xml",
+feedUrl: "https://seuusuario.github.io/seurepositorio/rss.xml",
 ```
 
 Isso garante que o elemento `<atom:link rel="self">` aponte para o endereço

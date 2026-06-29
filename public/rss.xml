@@ -5,12 +5,12 @@
     <description>Últimas notícias da KRAFTON e inZOI — feed gerado automaticamente a partir da API oficial. Inclui patch notes, anúncios, novos itens e mais.</description>
     <link>https://playinzoi.com/pt-br/news</link>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 29 Jun 2026 20:32:51 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 21:17:54 GMT</lastBuildDate>
     <generator>KRAFTON RSS Generator (Node.js) — github.com</generator>
-    <atom:link href="https://carolslima.github.io/krafton-inzoi-rss/public/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://carolslima.github.io/krafton-inzoi-rss/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>[v0.9.2] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.9.2] Detalhes do Hotfix — 11926 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20260624/7uWGH2pv.png" alt="[v0.9.2] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.9.2] Detalhes do Hotfix — 12538 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20260624/7uWGH2pv.png" alt="[v0.9.2] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/10343</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/10343</guid>
       <pubDate>Thu, 25 Jun 2026 08:10:22 GMT</pubDate>
@@ -19,7 +19,7 @@
     </item>
     <item>
       <title>[v0.9.1] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.9.1] Detalhes do Hotfix — 2512 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260619/Y1NzauP8.png" alt="[v0.9.1] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.9.1] Detalhes do Hotfix — 2515 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260619/Y1NzauP8.png" alt="[v0.9.1] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/10328</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/10328</guid>
       <pubDate>Fri, 19 Jun 2026 14:00:00 GMT</pubDate>
@@ -28,7 +28,7 @@
     </item>
     <item>
       <title>[v0.9.0] Notas do Patch</title>
-      <description>[Patch Note] [v0.9.0] Notas do Patch — 15045 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260618/V0msQ2QX.png" alt="[v0.9.0] Notas do Patch" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.9.0] Notas do Patch — 15076 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260618/V0msQ2QX.png" alt="[v0.9.0] Notas do Patch" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/10165</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/10165</guid>
       <pubDate>Fri, 19 Jun 2026 06:00:48 GMT</pubDate>
@@ -37,7 +37,7 @@
     </item>
     <item>
       <title>Estilo e espaço da juventude (Atualização v0.9.0)</title>
-      <description>[Novos Itens] Estilo e espaço da juventude (Atualização v0.9.0) — 4801 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260615/BOEzgnup.png" alt="Estilo e espaço da juventude (Atualização v0.9.0)" style="max-width:100%;"/></description>
+      <description>[Novos Itens] Estilo e espaço da juventude (Atualização v0.9.0) — 4807 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260615/BOEzgnup.png" alt="Estilo e espaço da juventude (Atualização v0.9.0)" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/new_items/10164</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/new_items/10164</guid>
       <pubDate>Fri, 19 Jun 2026 06:00:34 GMT</pubDate>
@@ -46,7 +46,7 @@
     </item>
     <item>
       <title>Aviso de compatibilidade dos mods de vestuário com a atualização do ModKit</title>
-      <description>[Anúncio] Aviso de compatibilidade dos mods de vestuário com a atualização do ModKit — 1942 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20260617/WFu5VQH9.png" alt="Aviso de compatibilidade dos mods de vestuário com a atualização do ModKit" style="max-width:100%;"/></description>
+      <description>[Anúncio] Aviso de compatibilidade dos mods de vestuário com a atualização do ModKit — 1944 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20260617/WFu5VQH9.png" alt="Aviso de compatibilidade dos mods de vestuário com a atualização do ModKit" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/10314</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/10314</guid>
       <pubDate>Wed, 17 Jun 2026 06:00:00 GMT</pubDate>
@@ -100,7 +100,7 @@
     </item>
     <item>
       <title>[v0.8.1] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.8.1] Detalhes do Hotfix — 5091 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260430/iHzWqg42.png" alt="[v0.8.1] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.8.1] Detalhes do Hotfix — 5092 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260430/iHzWqg42.png" alt="[v0.8.1] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/10045</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/10045</guid>
       <pubDate>Thu, 30 Apr 2026 12:10:28 GMT</pubDate>
@@ -118,7 +118,7 @@
     </item>
     <item>
       <title>[v0.8.0] Notas do Patch</title>
-      <description>[Patch Note] [v0.8.0] Notas do Patch — 57698 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260428/kZOnyQIh.png" alt="[v0.8.0] Notas do Patch" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.8.0] Notas do Patch — 57705 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260428/kZOnyQIh.png" alt="[v0.8.0] Notas do Patch" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/9960</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/9960</guid>
       <pubDate>Wed, 29 Apr 2026 08:00:52 GMT</pubDate>
@@ -127,7 +127,7 @@
     </item>
     <item>
       <title>CurseForge mod: Guia de Migração do Motor 5.6</title>
-      <description>[Anúncio] CurseForge mod: Guia de Migração do Motor 5.6 — 25790 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260429/jjUT4poZ.png" alt="CurseForge mod: Guia de Migração do Motor 5.6" style="max-width:100%;"/></description>
+      <description>[Anúncio] CurseForge mod: Guia de Migração do Motor 5.6 — 25791 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260429/jjUT4poZ.png" alt="CurseForge mod: Guia de Migração do Motor 5.6" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/10034</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/10034</guid>
       <pubDate>Wed, 29 Apr 2026 05:19:04 GMT</pubDate>
@@ -163,7 +163,7 @@
     </item>
     <item>
       <title>[v0.7.3] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.7.3] Detalhes do Hotfix — 6721 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260407/b81S4ZBU.png" alt="[v0.7.3] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.7.3] Detalhes do Hotfix — 6722 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260407/b81S4ZBU.png" alt="[v0.7.3] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/9921</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/9921</guid>
       <pubDate>Tue, 07 Apr 2026 12:02:24 GMT</pubDate>
@@ -172,7 +172,7 @@
     </item>
     <item>
       <title>[v0.7.2] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.7.2] Detalhes do Hotfix — 6851 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260331/ZgiX2f5W.png" alt="[v0.7.2] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.7.2] Detalhes do Hotfix — 6852 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260331/ZgiX2f5W.png" alt="[v0.7.2] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/9904</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/9904</guid>
       <pubDate>Tue, 31 Mar 2026 10:02:41 GMT</pubDate>
@@ -217,7 +217,7 @@
     </item>
     <item>
       <title>Atualizações do sistema de propriedades</title>
-      <description>[Anúncio] Atualizações do sistema de propriedades — 16389 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260320/soYmhbg2.png" alt="Atualizações do sistema de propriedades" style="max-width:100%;"/></description>
+      <description>[Anúncio] Atualizações do sistema de propriedades — 16391 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260320/soYmhbg2.png" alt="Atualizações do sistema de propriedades" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/9839</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/9839</guid>
       <pubDate>Fri, 20 Mar 2026 06:00:00 GMT</pubDate>
@@ -316,7 +316,7 @@
     </item>
     <item>
       <title>[v0.5.0] Notas do Patch</title>
-      <description>[Patch Note] [v0.5.0] Notas do Patch — 97359 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251223/8Ihu9xN1.png" alt="[v0.5.0] Notas do Patch" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.5.0] Notas do Patch — 97361 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251223/8Ihu9xN1.png" alt="[v0.5.0] Notas do Patch" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/9533</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/9533</guid>
       <pubDate>Tue, 23 Dec 2025 06:03:09 GMT</pubDate>
@@ -325,7 +325,7 @@
     </item>
     <item>
       <title>Celebre o Fim de Ano com Estilo (Atualização v0.5.0)</title>
-      <description>[Novos Itens] Celebre o Fim de Ano com Estilo (Atualização v0.5.0) — 16134 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251223/nqLYRURZ.png" alt="Celebre o Fim de Ano com Estilo (Atualização v0.5.0)" style="max-width:100%;"/></description>
+      <description>[Novos Itens] Celebre o Fim de Ano com Estilo (Atualização v0.5.0) — 16135 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251223/nqLYRURZ.png" alt="Celebre o Fim de Ano com Estilo (Atualização v0.5.0)" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/new_items/9535</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/new_items/9535</guid>
       <pubDate>Tue, 23 Dec 2025 06:01:07 GMT</pubDate>
@@ -370,7 +370,7 @@
     </item>
     <item>
       <title>[v0.4.2] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.4.2] Detalhes do Hotfix — 16562 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251104/uwydk38G.png" alt="[v0.4.2] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.4.2] Detalhes do Hotfix — 16563 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251104/uwydk38G.png" alt="[v0.4.2] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/9390</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/9390</guid>
       <pubDate>Tue, 04 Nov 2025 13:00:00 GMT</pubDate>
@@ -379,7 +379,7 @@
     </item>
     <item>
       <title>[v0.4.1] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.4.1] Detalhes do Hotfix — 7598 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251030/LwGQN00C.png" alt="[v0.4.1] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.4.1] Detalhes do Hotfix — 7599 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251030/LwGQN00C.png" alt="[v0.4.1] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/9376</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/9376</guid>
       <pubDate>Thu, 30 Oct 2025 14:43:17 GMT</pubDate>
@@ -388,7 +388,7 @@
     </item>
     <item>
       <title>[v0.4.0] Notas do Patch</title>
-      <description>[Patch Note] [v0.4.0] Notas do Patch — 93559 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251107/XA4ef9gi.png" alt="[v0.4.0] Notas do Patch" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.4.0] Notas do Patch — 93563 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251107/XA4ef9gi.png" alt="[v0.4.0] Notas do Patch" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/9309</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/9309</guid>
       <pubDate>Thu, 30 Oct 2025 09:02:00 GMT</pubDate>
@@ -424,7 +424,7 @@
     </item>
     <item>
       <title>Anúncio dos Vencedores do Desafio Cahaya: Viva do Seu Jeito</title>
-      <description>[Anúncio] Anúncio dos Vencedores do Desafio Cahaya: Viva do Seu Jeito — 11260 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20250916/E91ojQKQ.png" alt="Anúncio dos Vencedores do Desafio Cahaya: Viva do Seu Jeito" style="max-width:100%;"/></description>
+      <description>[Anúncio] Anúncio dos Vencedores do Desafio Cahaya: Viva do Seu Jeito — 11261 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20250916/E91ojQKQ.png" alt="Anúncio dos Vencedores do Desafio Cahaya: Viva do Seu Jeito" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/9199</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/9199</guid>
       <pubDate>Wed, 17 Sep 2025 06:00:00 GMT</pubDate>
@@ -442,7 +442,7 @@
     </item>
     <item>
       <title>[v0.3.5] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.3.5] Detalhes do Hotfix — 10652 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20250903/7qU6FixO.png" alt="[v0.3.5] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.3.5] Detalhes do Hotfix — 10653 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20250903/7qU6FixO.png" alt="[v0.3.5] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/9147</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/9147</guid>
       <pubDate>Wed, 03 Sep 2025 07:03:00 GMT</pubDate>
@@ -496,7 +496,7 @@
     </item>
     <item>
       <title>Eventos de Lançamento – DLC inZOI: Paraíso Tropical</title>
-      <description>[Anúncio] Eventos de Lançamento – DLC inZOI: Paraíso Tropical — 11912 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20250820/nB5xc1kQ.png" alt="Eventos de Lançamento – DLC inZOI: Paraíso Tropical" style="max-width:100%;"/></description>
+      <description>[Anúncio] Eventos de Lançamento – DLC inZOI: Paraíso Tropical — 11913 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20250820/nB5xc1kQ.png" alt="Eventos de Lançamento – DLC inZOI: Paraíso Tropical" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/9083</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/9083</guid>
       <pubDate>Wed, 20 Aug 2025 13:00:00 GMT</pubDate>
@@ -514,7 +514,7 @@
     </item>
     <item>
       <title>Aproveite Cahaya com estilo (inZOI: Paraíso Tropical)</title>
-      <description>[Novos Itens] Aproveite Cahaya com estilo (inZOI: Paraíso Tropical) — 16784 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250820/XHcfCbSU.png" alt="Aproveite Cahaya com estilo (inZOI: Paraíso Tropical)" style="max-width:100%;"/></description>
+      <description>[Novos Itens] Aproveite Cahaya com estilo (inZOI: Paraíso Tropical) — 16785 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250820/XHcfCbSU.png" alt="Aproveite Cahaya com estilo (inZOI: Paraíso Tropical)" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/new_items/9081</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/new_items/9081</guid>
       <pubDate>Wed, 20 Aug 2025 06:00:00 GMT</pubDate>
@@ -523,7 +523,7 @@
     </item>
     <item>
       <title>[v0.3.0 e DLC] Notas do Patch</title>
-      <description>[Patch Note] [v0.3.0 e DLC] Notas do Patch — 180991 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251107/DwZuWFtE.png" alt="[v0.3.0 e DLC] Notas do Patch" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.3.0 e DLC] Notas do Patch — 180994 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251107/DwZuWFtE.png" alt="[v0.3.0 e DLC] Notas do Patch" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/9079</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/9079</guid>
       <pubDate>Wed, 20 Aug 2025 05:00:00 GMT</pubDate>
@@ -559,7 +559,7 @@
     </item>
     <item>
       <title>Boas-vindas ao Fórum inZOI!</title>
-      <description>[Anúncio] Boas-vindas ao Fórum inZOI! — 7474 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250811/Sgn8Eam2.png" alt="Boas-vindas ao Fórum inZOI!" style="max-width:100%;"/></description>
+      <description>[Anúncio] Boas-vindas ao Fórum inZOI! — 7475 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250811/Sgn8Eam2.png" alt="Boas-vindas ao Fórum inZOI!" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/9039</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/9039</guid>
       <pubDate>Thu, 14 Aug 2025 01:00:00 GMT</pubDate>
@@ -568,7 +568,7 @@
     </item>
     <item>
       <title>inZOI está chegando ao PS5 em 2026!</title>
-      <description>[Anúncio] inZOI está chegando ao PS5 em 2026! — 17283 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20250811/Up3HlFMF.png" alt="inZOI está chegando ao PS5 em 2026!" style="max-width:100%;"/></description>
+      <description>[Anúncio] inZOI está chegando ao PS5 em 2026! — 17284 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20250811/Up3HlFMF.png" alt="inZOI está chegando ao PS5 em 2026!" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/9043</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/9043</guid>
       <pubDate>Wed, 13 Aug 2025 01:00:00 GMT</pubDate>
@@ -622,7 +622,7 @@
     </item>
     <item>
       <title>[v0.2.5] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.2.5] Detalhes do Hotfix — 29235 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250702/lFmc2TR2.png" alt="[v0.2.5] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.2.5] Detalhes do Hotfix — 29236 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250702/lFmc2TR2.png" alt="[v0.2.5] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/8874</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/8874</guid>
       <pubDate>Wed, 02 Jul 2025 05:01:00 GMT</pubDate>
@@ -685,7 +685,7 @@
     </item>
     <item>
       <title>[v0.2.0] Patch Notes</title>
-      <description>[Patch Note] [v0.2.0] Patch Notes — 204476 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251107/JNHR9FXM.png" alt="[v0.2.0] Patch Notes" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.2.0] Patch Notes — 204477 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20251107/JNHR9FXM.png" alt="[v0.2.0] Patch Notes" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/8812</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/8812</guid>
       <pubDate>Thu, 12 Jun 2025 15:00:59 GMT</pubDate>
@@ -748,7 +748,7 @@
     </item>
     <item>
       <title>Cronograma de Modding e Lançamento do Modkit inZOI (Atualizado)</title>
-      <description>[Anúncio] Cronograma de Modding e Lançamento do Modkit inZOI (Atualizado) — 241782 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250509/eqfZkqEj.png" alt="Cronograma de Modding e Lançamento do Modkit inZOI (Atualizado)" style="max-width:100%;"/></description>
+      <description>[Anúncio] Cronograma de Modding e Lançamento do Modkit inZOI (Atualizado) — 241784 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250509/eqfZkqEj.png" alt="Cronograma de Modding e Lançamento do Modkit inZOI (Atualizado)" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/8639</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/8639</guid>
       <pubDate>Fri, 09 May 2025 04:01:00 GMT</pubDate>
@@ -757,7 +757,7 @@
     </item>
     <item>
       <title>[v0.1.7] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.1.7] Detalhes do Hotfix — 45976 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250429/YZYql0NX.png" alt="[v0.1.7] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.1.7] Detalhes do Hotfix — 45978 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250429/YZYql0NX.png" alt="[v0.1.7] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/8594</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/8594</guid>
       <pubDate>Tue, 29 Apr 2025 05:01:09 GMT</pubDate>
@@ -775,7 +775,7 @@
     </item>
     <item>
       <title>[v0.1.6] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.1.6] Detalhes do Hotfix — 28045 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250422/rgXcGVRi.png" alt="[v0.1.6] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.1.6] Detalhes do Hotfix — 28046 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250422/rgXcGVRi.png" alt="[v0.1.6] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/8571</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/8571</guid>
       <pubDate>Tue, 22 Apr 2025 08:01:09 GMT</pubDate>
@@ -820,7 +820,7 @@
     </item>
     <item>
       <title>[v0.1.2] Detalhes do Hotfix</title>
-      <description>[Patch Note] [v0.1.2] Detalhes do Hotfix — 33611 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250330/p0BGETaQ.png" alt="[v0.1.2] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] [v0.1.2] Detalhes do Hotfix — 33612 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250330/p0BGETaQ.png" alt="[v0.1.2] Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/8451</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/8451</guid>
       <pubDate>Sun, 30 Mar 2025 08:03:02 GMT</pubDate>
@@ -856,7 +856,7 @@
     </item>
     <item>
       <title>Lista de problemas conhecidos e planos de melhoria na qualidade da localização</title>
-      <description>[Anúncio] Lista de problemas conhecidos e planos de melhoria na qualidade da localização — 167789 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250327/4JHacWsR.png" alt="Lista de problemas conhecidos e planos de melhoria na qualidade da localização" style="max-width:100%;"/></description>
+      <description>[Anúncio] Lista de problemas conhecidos e planos de melhoria na qualidade da localização — 167792 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250327/4JHacWsR.png" alt="Lista de problemas conhecidos e planos de melhoria na qualidade da localização" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/8432</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/8432</guid>
       <pubDate>Thu, 27 Mar 2025 12:00:00 GMT</pubDate>
@@ -874,7 +874,7 @@
     </item>
     <item>
       <title>Orientações sobre os requisitos de sistema para utilizar o Smart Zoi</title>
-      <description>[Anúncio] Orientações sobre os requisitos de sistema para utilizar o Smart Zoi — 116014 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250326/r7E9uLjr.png" alt="Orientações sobre os requisitos de sistema para utilizar o Smart Zoi" style="max-width:100%;"/></description>
+      <description>[Anúncio] Orientações sobre os requisitos de sistema para utilizar o Smart Zoi — 116020 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250326/r7E9uLjr.png" alt="Orientações sobre os requisitos de sistema para utilizar o Smart Zoi" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/8419</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/8419</guid>
       <pubDate>Wed, 26 Mar 2025 15:00:00 GMT</pubDate>
@@ -901,7 +901,7 @@
     </item>
     <item>
       <title>03/22(sábado) inZOI: Creative Studio - Detalhes do Hotfix</title>
-      <description>[Patch Note] 03/22(sábado) inZOI: Creative Studio - Detalhes do Hotfix — 18377 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250322/HYoMv54t.png" alt="03/22(sábado) inZOI: Creative Studio - Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <description>[Patch Note] 03/22(sábado) inZOI: Creative Studio - Detalhes do Hotfix — 18378 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250322/HYoMv54t.png" alt="03/22(sábado) inZOI: Creative Studio - Detalhes do Hotfix" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/patch_note/8375</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/patch_note/8375</guid>
       <pubDate>Sat, 22 Mar 2025 15:59:00 GMT</pubDate>
@@ -910,7 +910,7 @@
     </item>
     <item>
       <title>inZOI: Creative Studio – Como lidar com Problemas Conhecidos</title>
-      <description>[Anúncio] inZOI: Creative Studio – Como lidar com Problemas Conhecidos — 15345 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250322/GlYGJPsm.png" alt="inZOI: Creative Studio – Como lidar com Problemas Conhecidos" style="max-width:100%;"/></description>
+      <description>[Anúncio] inZOI: Creative Studio – Como lidar com Problemas Conhecidos — 15346 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/inZOI_Official-382d/20250322/GlYGJPsm.png" alt="inZOI: Creative Studio – Como lidar com Problemas Conhecidos" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/pt-br/news/announcement/8373</link>
       <guid isPermaLink="true">https://playinzoi.com/pt-br/news/announcement/8373</guid>
       <pubDate>Sat, 22 Mar 2025 13:59:24 GMT</pubDate>
@@ -1000,7 +1000,7 @@
     </item>
     <item>
       <title>8/23 (Fri) inZOI Hotfix Patch</title>
-      <description>[Patch Note] 8/23 (Fri) inZOI Hotfix Patch — 25122 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20240823/OME5Qk5b.png" alt="8/23 (Fri) inZOI Hotfix Patch" style="max-width:100%;"/></description>
+      <description>[Patch Note] 8/23 (Fri) inZOI Hotfix Patch — 25124 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20240823/OME5Qk5b.png" alt="8/23 (Fri) inZOI Hotfix Patch" style="max-width:100%;"/></description>
       <link>https://playinzoi.com/en/news/patch_note/7679</link>
       <guid isPermaLink="true">https://playinzoi.com/en/news/patch_note/7679</guid>
       <pubDate>Fri, 23 Aug 2024 16:23:00 GMT</pubDate>

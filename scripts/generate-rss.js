@@ -191,8 +191,8 @@ const FEED_META = {
     "Inclui patch notes, anúncios, novos itens e mais.",
   link: "https://playinzoi.com/pt-br/news",
   language: "pt-br",
-  /** Substitua pela URL real do seu GitHub Pages */
-  feedUrl: "https://carolslima.github.io/krafton-inzoi-rss/public/rss.xml",
+  /** URL real do GitHub Pages (a pasta public/ vai para raiz do site) */
+  feedUrl: "https://carolslima.github.io/krafton-inzoi-rss/rss.xml",
 };
 
 // ---------------------------------------------------------------------------
