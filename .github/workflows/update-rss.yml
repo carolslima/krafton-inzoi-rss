@@ -1,30 +1,21 @@
 # =============================================================================
-# KRAFTON RSS — Update Feed Workflow
+# KRAFTON RSS — Update Feed + Deploy to GitHub Pages
 # =============================================================================
-# Executa periodicamente (a cada 30 minutos) e sob demanda.
-# Consulta a API da KRAFTON, detecta novas notícias e publica o RSS.
+# Um único workflow que:
+#   1. Consulta a API da KRAFTON
+#   2. Detecta novas notícias e gera RSS 2.0
+#   3. Commita as mudanças
+#   4. Publica no GitHub Pages
 # =============================================================================
 
 name: Update RSS Feed
 
-# ---------------------------------------------------------------------------
-# Gatilhos
-# ---------------------------------------------------------------------------
 on:
-  # Execução automática — a cada 30 minutos
   schedule:
     - cron: "*/30 * * * *"
 
-  # Execução manual via botão na interface do GitHub
   workflow_dispatch:
-    inputs:
-      force:
-        description: "Forçar regeneração mesmo sem mudanças"
-        type: boolean
-        default: false
-        required: false
 
-  # Opcional: executa em push no main (útil para testes)
   push:
     branches:
       - main
@@ -32,83 +23,89 @@ on:
       - "scripts/generate-rss.js"
       - ".github/workflows/update-rss.yml"
 
-# ---------------------------------------------------------------------------
-# Permissões
-# ---------------------------------------------------------------------------
+# Permissões para commit + GitHub Pages
 permissions:
-  contents: write # Necessário para push do RSS gerado
+  contents: write
+  pages: write
+  id-token: write
 
-# ---------------------------------------------------------------------------
-# Jobs
-# ---------------------------------------------------------------------------
+# Um job por vez
+concurrency:
+  group: "rss-update"
+  cancel-in-progress: true
+
 jobs:
-  update-feed:
-    name: Update RSS Feed
+  generate-and-deploy:
+    name: Generate RSS & Deploy
     runs-on: ubuntu-latest
-    # Timeout total do job — evita workflows zumbis
     timeout-minutes: 5
 
+    # URL pública do ambiente (aparece no deploy)
+    environment:
+      name: github-pages
+      url: https://carolslima.github.io/krafton-inzoi-rss/rss.xml
+
     steps:
-      # -----------------------------------------------------------------------
-      # 1. Checkout do repositório
-      # -----------------------------------------------------------------------
+      # -------------------------------------------------------------------
+      # 1. Checkout
+      # -------------------------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # Busca o histórico completo para commits limpos
           fetch-depth: 1
-          # Token padrão tem permissão de escrita
           persist-credentials: true
 
-      # -----------------------------------------------------------------------
+      # -------------------------------------------------------------------
       # 2. Setup Node.js 22
-      # -----------------------------------------------------------------------
+      # -------------------------------------------------------------------
       - name: Setup Node.js 22
         uses: actions/setup-node@v4
         with:
           node-version: "22"
 
-      # -----------------------------------------------------------------------
-      # 3. Validar package.json
-      # -----------------------------------------------------------------------
-      - name: Validate package.json
-        run: node -e "import('fs').then(m=>{const p=JSON.parse(m.readFileSync('package.json','utf8'));console.log('Projeto:',p.name,'v'+p.version)})"
-
-      # -----------------------------------------------------------------------
-      # 4. Gerar RSS
-      # -----------------------------------------------------------------------
+      # -------------------------------------------------------------------
+      # 3. Gerar RSS
+      # -------------------------------------------------------------------
       - name: Generate RSS Feed
         id: generate
         run: node scripts/generate-rss.js
 
-      # -----------------------------------------------------------------------
-      # 5. Verificar alterações
-      # -----------------------------------------------------------------------
-      - name: Check for changes
-        id: changes
+      # -------------------------------------------------------------------
+      # 4. Verificar alterações e commitar
+      # -------------------------------------------------------------------
+      - name: Commit changes (if any)
+        id: commit
         run: |
           if [ -n "$(git status --porcelain public/rss.xml data/posts.json)" ]; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "Mudanças detectadas — será feito commit"
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add public/rss.xml data/posts.json
+            git commit -m "chore: atualizar feed RSS [$(date -u +'%Y-%m-%d %H:%M UTC')]"
+            git push
+            echo "committed=true" >> "$GITHUB_OUTPUT"
+            echo "✅ Mudanças commitadas"
           else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "Nenhuma mudança detectada"
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "Nenhuma mudança — pulando commit"
           fi
 
-      # -----------------------------------------------------------------------
-      # 6. Commit e push (apenas se houver alterações)
-      # -----------------------------------------------------------------------
-      - name: Commit and push changes
-        if: steps.changes.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+      # -------------------------------------------------------------------
+      # 5. Setup GitHub Pages
+      # -------------------------------------------------------------------
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-          git add public/rss.xml data/posts.json
+      # -------------------------------------------------------------------
+      # 6. Upload do artifact (conteúdo de public/ → raiz do site)
+      # -------------------------------------------------------------------
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "public"
 
-          # Obtém contagem de novos posts do log para mensagem
-          COMMIT_MSG="chore: atualizar feed RSS [$(date -u +'%Y-%m-%d %H:%M UTC')]"
-          git commit -m "$COMMIT_MSG"
-
-          git push
-          echo "✅ RSS publicado com sucesso!"
+      # -------------------------------------------------------------------
+      # 7. Deploy para GitHub Pages
+      # -------------------------------------------------------------------
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
