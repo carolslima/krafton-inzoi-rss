@@ -1,0 +1,56 @@
+# =============================================================================
+# GitHub Pages — Deploy do RSS estático
+# =============================================================================
+# Publica o conteúdo da pasta public/ no GitHub Pages.
+# Disparado automaticamente após push no main OU após o workflow update-rss.
+# =============================================================================
+
+name: Deploy to GitHub Pages
+
+on:
+  # Dispara em push no main quando há alterações no RSS
+  push:
+    branches:
+      - main
+    paths:
+      - "public/**"
+      - ".github/workflows/deploy-pages.yml"
+
+  # Permite deploy manual
+  workflow_dispatch:
+
+# Permissões necessárias para GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Um deploy por vez — evita conflitos
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Pasta que contém os arquivos estáticos
+          path: "public"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

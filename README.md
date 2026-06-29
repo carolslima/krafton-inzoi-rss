@@ -221,15 +221,36 @@ Nenhuma outra permissão é necessária.
 
 ## GitHub Pages
 
-O arquivo `public/rss.xml` é servido via GitHub Pages.
+O arquivo `public/rss.xml` é servido via GitHub Pages usando **GitHub Actions**
+(método atual — não usa mais "Deploy from a branch").
+
+O projeto já inclui o workflow `.github/workflows/deploy-pages.yml` pronto.
 
 ### Como habilitar
 
 1. Vá em **Settings** → **Pages**.
-2. Em **Source**, selecione **Deploy from a branch**.
-3. Em **Branch**, escolha `main` e pasta `/ (root)`.
-   - Ou configure a pasta `/public` como raiz.
-4. Clique em **Save**.
+2. Em **Build and deployment** → **Source**, selecione **GitHub Actions**.
+3. O workflow `deploy-pages.yml` será detectado automaticamente.
+4. Faça um push para `main` (ou execute `update-rss.yml`) para disparar o primeiro deploy.
+
+### Como funciona
+
+```
+update-rss.yml                     deploy-pages.yml
+──────────────                     ─────────────────
+Gera rss.xml                       Checkout
+  ↓                                Upload artifact (public/)
+Commit + Push                      Deploy to Pages
+  ↓                                    ↓
+Dispara push event ──────────────▶  Publica em carolslima.github.io
+```
+
+O `update-rss.yml` commita o RSS → o push aciona automaticamente o
+`deploy-pages.yml` → o site é atualizado.
+
+### Execução manual do deploy
+
+1. Vá em **Actions** → **Deploy to GitHub Pages** → **Run workflow**.
 
 O feed estará disponível em:
 
