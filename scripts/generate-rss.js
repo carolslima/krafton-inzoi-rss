@@ -174,14 +174,14 @@ const RSS_FILE = join(ROOT, "public", "rss.xml");
 /**
  * Template para a URL pública de cada notícia.
  *
- * Campos disponíveis: {category}, {postId}, {identifier}, {lang}
+ * Campos disponíveis: {lang}, {postId}
  *
  * URLs conhecidas (playinzoi.com — subsidiária KRAFTON):
- *   https://playinzoi.com/pt-br/news/{category}/{postId}
+ *   https://playinzoi.com/pt-br/news/{postId}
  *
  * Ajuste conforme a estrutura real do site.
  */
-const URL_TEMPLATE = "https://playinzoi.com/{lang}/news/{category}/{postId}";
+const URL_TEMPLATE = "https://playinzoi.com/{lang}/news/{postId}";
 
 /** Metadados do feed RSS */
 const FEED_META = {
@@ -500,9 +500,7 @@ function normalizePost(raw) {
   // URL pública construída a partir do template
   const lang = raw.lang ?? "pt-br";
   const link = URL_TEMPLATE
-    .replace("{category}", String(category))
     .replace("{postId}", String(id))
-    .replace("{identifier}", String(raw.identifier ?? "news"))
     .replace("{lang}", String(lang));
 
   // Descrição — a API de lista não retorna corpo, então montamos com o disponível
