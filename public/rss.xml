@@ -5,7 +5,7 @@
     <description>Últimas notícias da KRAFTON e inZOI — feed gerado automaticamente a partir da API oficial. Inclui patch notes, anúncios, novos itens e mais.</description>
     <link>https://playinzoi.com/pt-br/news</link>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 06 Jul 2026 06:06:14 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 06 Jul 2026 11:14:16 GMT</lastBuildDate>
     <generator>KRAFTON RSS Generator (Node.js) — github.com</generator>
     <atom:link href="https://carolslima.github.io/krafton-inzoi-rss/rss.xml" rel="self" type="application/rss+xml"/>
     <item>
