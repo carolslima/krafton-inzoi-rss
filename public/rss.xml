@@ -5,9 +5,18 @@
     <description>Últimas notícias da KRAFTON e inZOI — feed gerado automaticamente a partir da API oficial. Inclui patch notes, anúncios, novos itens e mais.</description>
     <link>https://playinzoi.com/pt-br/news</link>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 30 Jul 2026 03:42:52 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 06:35:07 GMT</lastBuildDate>
     <generator>KRAFTON RSS Generator (Node.js) — github.com</generator>
     <atom:link href="https://carolslima.github.io/krafton-inzoi-rss/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[v0.9.6] Detalhes do Hotfix</title>
+      <description>[Patch Note] [v0.9.6] Detalhes do Hotfix — 139 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260730/x2I4Tl2D.png" alt="[v0.9.6] Detalhes do Hotfix" style="max-width:100%;"/></description>
+      <link>https://playinzoi.com/pt-br/news/10837</link>
+      <guid isPermaLink="true">https://playinzoi.com/pt-br/news/10837</guid>
+      <pubDate>Thu, 30 Jul 2026 06:01:12 GMT</pubDate>
+      <category>Patch Note</category>
+      <enclosure url="https://wstatic-prod-boc.krafton.com/common/content/news/20260730/x2I4Tl2D.png" type="image/jpeg"/>
+    </item>
     <item>
       <title>Aviso - Manutenção do Canvas</title>
       <description>[Anúncio] Aviso - Manutenção do Canvas — 4 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260721/FfBK3p0L.png" alt="Aviso - Manutenção do Canvas" style="max-width:100%;"/></description>
