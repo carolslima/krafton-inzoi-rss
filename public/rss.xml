@@ -5,9 +5,18 @@
     <description>Últimas notícias da KRAFTON e inZOI — feed gerado automaticamente a partir da API oficial. Inclui patch notes, anúncios, novos itens e mais.</description>
     <link>https://playinzoi.com/pt-br/news</link>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 07 Aug 2026 10:27:47 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 11:25:35 GMT</lastBuildDate>
     <generator>KRAFTON RSS Generator (Node.js) — github.com</generator>
     <atom:link href="https://carolslima.github.io/krafton-inzoi-rss/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title><![CDATA[Pesquisa inZOI: conte o que achou das atualizações de carreira & escola]]></title>
+      <description><![CDATA[[Anúncio] Pesquisa inZOI: conte o que achou das atualizações de carreira & escola — 11 visualizações]]><br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260807/Cc4wCvTj.png" alt="Pesquisa inZOI: conte o que achou das atualizações de carreira &amp; escola" style="max-width:100%;"/></description>
+      <link>https://playinzoi.com/pt-br/news/10877</link>
+      <guid isPermaLink="true">https://playinzoi.com/pt-br/news/10877</guid>
+      <pubDate>Fri, 07 Aug 2026 11:00:00 GMT</pubDate>
+      <category>Anúncio</category>
+      <enclosure url="https://wstatic-prod-boc.krafton.com/common/content/news/20260807/Cc4wCvTj.png" type="image/jpeg"/>
+    </item>
     <item>
       <title>[v0.9.6] Detalhes do Hotfix</title>
       <description>[Patch Note] [v0.9.6] Detalhes do Hotfix — 139 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260730/x2I4Tl2D.png" alt="[v0.9.6] Detalhes do Hotfix" style="max-width:100%;"/></description>
