@@ -5,9 +5,18 @@
     <description>Últimas notícias da KRAFTON e inZOI — feed gerado automaticamente a partir da API oficial. Inclui patch notes, anúncios, novos itens e mais.</description>
     <link>https://playinzoi.com/pt-br/news</link>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 03 Sep 2026 01:21:56 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 06:23:10 GMT</lastBuildDate>
     <generator>KRAFTON RSS Generator (Node.js) — github.com</generator>
     <atom:link href="https://carolslima.github.io/krafton-inzoi-rss/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[v0.10.0] Notas da atualização</title>
+      <description>[Patch Note] [v0.10.0] Notas da atualização — 466 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260902/ZYllNl1Q.png" alt="[v0.10.0] Notas da atualização" style="max-width:100%;"/></description>
+      <link>https://playinzoi.com/pt-br/news/10849</link>
+      <guid isPermaLink="true">https://playinzoi.com/pt-br/news/10849</guid>
+      <pubDate>Thu, 03 Sep 2026 06:02:41 GMT</pubDate>
+      <category>Patch Note</category>
+      <enclosure url="https://wstatic-prod-boc.krafton.com/common/content/news/20260902/ZYllNl1Q.png" type="image/jpeg"/>
+    </item>
     <item>
       <title><![CDATA[Pesquisa inZOI: conte o que achou das atualizações de carreira & escola]]></title>
       <description><![CDATA[[Anúncio] Pesquisa inZOI: conte o que achou das atualizações de carreira & escola — 11 visualizações]]><br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20260807/Cc4wCvTj.png" alt="Pesquisa inZOI: conte o que achou das atualizações de carreira &amp; escola" style="max-width:100%;"/></description>
