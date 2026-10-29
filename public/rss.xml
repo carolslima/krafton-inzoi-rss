@@ -5,9 +5,18 @@
     <description>Últimas notícias da KRAFTON e inZOI — feed gerado automaticamente a partir da API oficial. Inclui patch notes, anúncios, novos itens e mais.</description>
     <link>https://playinzoi.com/pt-br/news</link>
     <language>pt-br</language>
-    <lastBuildDate>Thu, 29 Oct 2026 02:45:28 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 09:45:26 GMT</lastBuildDate>
     <generator>KRAFTON RSS Generator (Node.js) — github.com</generator>
     <atom:link href="https://carolslima.github.io/krafton-inzoi-rss/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[v0.11.2] Aviso do hotfix </title>
+      <description>[Patch Note] [v0.11.2] Aviso do hotfix  — 368 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20261028/8WSnsWGw.png" alt="[v0.11.2] Aviso do hotfix " style="max-width:100%;"/></description>
+      <link>https://playinzoi.com/pt-br/news/11348</link>
+      <guid isPermaLink="true">https://playinzoi.com/pt-br/news/11348</guid>
+      <pubDate>Thu, 29 Oct 2026 06:14:04 GMT</pubDate>
+      <category>Patch Note</category>
+      <enclosure url="https://wstatic-prod-boc.krafton.com/common/content/news/20261028/8WSnsWGw.png" type="image/jpeg"/>
+    </item>
     <item>
       <title>[v0.11.1] Detalhes do Hotfix</title>
       <description>[Patch Note] [v0.11.1] Detalhes do Hotfix — 323 visualizações<br/><img src="https://wstatic-prod-boc.krafton.com/common/content/news/20261020/6dfjH06l.png" alt="[v0.11.1] Detalhes do Hotfix" style="max-width:100%;"/></description>
